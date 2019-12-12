@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import {
     HashRouter,
     Route,
@@ -9,10 +8,10 @@ import {
 } from 'react-router-dom';
 
 
-function HomeHeader() {
+function Contact() {
     return <HashRouter>
         <>
-            <h3>home Header</h3>
+            <h3>Contact</h3>
 
         </>
     </HashRouter>;
@@ -20,4 +19,4 @@ function HomeHeader() {
     ;
 }
 
-export default HomeHeader;
+export default Contact;

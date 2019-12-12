@@ -9,12 +9,15 @@ import {
   NavLink,
 } from 'react-router-dom';
 import Home from "./components/Home";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return <HashRouter>
     <>
       <Route exact path='/' component={Home} />
-      <h1>App</h1>
+      <Route path='/login' component={Login} />
+      <Route path='/register' component={Register} />
     </>
   </HashRouter>;
 

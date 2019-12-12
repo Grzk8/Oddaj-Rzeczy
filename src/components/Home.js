@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from './Header';
+import React, {Component} from "react";
 import {
     HashRouter,
     Route,
@@ -7,13 +6,22 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
-import HomeHeader from "./components/HomeHeader";
+import HomeHeader from './Home/HomeHeader';
+import ThreeColumns from './Home/ThreeColumns';
+import SimpleSteps from './Home/SimpleSteps';
+import AboutUs from './Home/AboutUs';
+import WhoWeHelp from './Home/WhoWeHelp';
+import Contact from './Home/Contact';
 
 function Home() {
     return <HashRouter>
         <>
-            <h2>home</h2>
             <HomeHeader/>
+            <ThreeColumns/>
+            <SimpleSteps/>
+            <AboutUs/>
+            <WhoWeHelp/>
+            <Contact/>
 
         </>
     </HashRouter>;
