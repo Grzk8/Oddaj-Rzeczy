@@ -12,11 +12,35 @@ import Home from "../Home";
 function HomeHeader() {
     return <HashRouter>
         <>
-            <h3>home Header</h3>
-            <ul>
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/register">Register</Link></li>
-            </ul>
+          <article className={'headArticle'}>
+            <section className={'leftSide'}>
+                <div className={'pcs'}>
+
+                </div>
+            </section>
+            <section className={'rightSide'}>
+                <div className={'rscontainer'}>
+                    <div className={'log'}>
+                        <ul className={'logUl'}>
+                            <li><Link to="/login">Zaloguj</Link></li>
+                            <li><Link to="/register">Załóż konto</Link></li>
+                        </ul>
+                    </div>
+                    <div className={'menu'}>
+
+                    </div>
+                    <div className={'text'}>
+
+                    </div>
+                    <div className={'decoration'}>
+
+                    </div>
+                    <div className={'rsbtns'}>
+
+                    </div>
+                </div>
+            </section>
+          </article>
         </>
     </HashRouter>;
 
