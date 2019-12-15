@@ -1,0 +1,42 @@
+.headArticle{
+  height: 900px;
+  width: 100%;
+  .pcs{
+
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-position-x: -500px;
+    background-position-y: -50px;
+    width: 50%;
+  }
+  .rscontainer{
+    h1{
+      font-size: 35px;
+      color: $textColor;
+      text-align: center;
+      margin-top: 30%;
+      line-height: 55px;
+    }
+    .decoration{
+      top: 350px;
+      left: 60%;
+    }
+    .header_buttons{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+     .btn{
+       border: 1px solid $textColor;
+       width: 250px;
+     padding: 5% 0 5% 0;
+       margin-right: 60px;
+       .link{
+         font-size: 30px;
+         color: $textColor;
+         text-align: center;
+         text-transform: uppercase;
+       }
+     }
+    }
+
+  }
+}

@@ -1,0 +1,42 @@
+.simpleSteps{
+
+  h1{
+    padding-top: 5%;
+    margin-bottom: 1%;
+    font-size: 40px;
+    text-align: center;
+    color: $textColor;
+  }
+}
+.steps{
+  background-color: $BackgroundSimpleSteps;
+  height: 300px;
+  margin-top: 4%;
+
+.steps-container{
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+.step{
+  width: 130px;
+  text-align: center;
+  margin-top: 76px;
+  margin-bottom: 71px;
+  color: $textColor;
+}
+}
+}
+.button{
+  margin-top: 4%;
+  position: absolute;
+  right: 45%;
+.link{
+  font-size: 36px;
+  color: $textColor;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid $textColor;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}}

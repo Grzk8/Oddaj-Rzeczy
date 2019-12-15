@@ -8,39 +8,32 @@ import {
 } from 'react-router-dom';
 import App from "../../App";
 import Home from "../Home";
+import decoration from '../../assets/Decoration.svg';
 
 function HomeHeader() {
     return <HashRouter>
         <>
-          <article className={'headArticle'}>
-            <section className={'leftSide'}>
-                <div className={'pcs'}>
+          <header className={'headArticle flex-box'}>
+                   <div className={'pcs'}>
+                   </div>
 
-                </div>
-            </section>
-            <section className={'rightSide'}>
-                <div className={'rscontainer'}>
-                    <div className={'log'}>
-                        <ul className={'logUl'}>
-                            <li><Link to="/login">Zaloguj</Link></li>
-                            <li><Link to="/register">Załóż konto</Link></li>
-                        </ul>
-                    </div>
-                    <div className={'menu'}>
-
-                    </div>
-                    <div className={'text'}>
-
-                    </div>
-                    <div className={'decoration'}>
-
-                    </div>
-                    <div className={'rsbtns'}>
-
+                <div className={'rscontainer flex-box'}>
+                    <h1>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <img className={'decoration'} src={decoration}></img>
+                    <div className={'header_buttons flex-box'}>
+                        <div className={'btn'}>
+                            <Link to='/'>
+                                <Link className={'link'}>Oddaj<br/> rzeczy</Link>
+                            </Link>
+                        </div>
+                        <div className={'btn'}>
+                            <Link to='/'>
+                                <Link className={'link'}>Zorganizuj zbiórkę</Link>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </section>
-          </article>
+          </header>
         </>
     </HashRouter>;
 

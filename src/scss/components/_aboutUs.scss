@@ -1,0 +1,39 @@
+.aboutUs {
+  margin-top: 15%;
+  height: 930px;
+  justify-content: flex-start;
+  .about{
+    width: 50%;
+    background-color: $BackgroundSimpleSteps;
+    color: $textColor;
+    h1{
+      font-size: 35px;
+      text-align: center;
+      margin-top: 20%;
+      font-weight: 200;
+      margin-bottom: 2%;
+    }
+    .decoration{
+      left: 19%;
+
+    }
+    p{
+      font-size: 28px;
+      text-align: center;
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-top: 10%;
+      line-height: 54px;
+    }
+    .signature{
+      position: absolute;
+      left: 600px;
+      margin-top: 2%;
+    }
+  }
+  .about-img {
+    background-image: url("../../assets/People.jpg");
+    width: 50%;
+    background-position-x: 20%;
+  }
+}

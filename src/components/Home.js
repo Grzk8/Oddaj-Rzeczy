@@ -16,6 +16,20 @@ import Contact from './Home/Contact';
 function Home() {
     return <HashRouter>
         <>
+            <div className={'menu'}>
+                <ul className={'logUl'}>
+                    <li><Link className={'link'} to="/login">Zaloguj</Link></li>
+                    <li><Link className={'link'} to="/register">Załóż konto</Link></li>
+                </ul>
+                <ul className='scrollList flex-box'>
+                    <li><scrollLink className='scrollLink start' to={HomeHeader} spy={true}>Start</scrollLink></li>
+                    <li><scrollLink className='scrollLink' to={ThreeColumns} spy={true}>O co chodzi?</scrollLink></li>
+                    <li><scrollLink className='scrollLink' spy={true}>O nas</scrollLink></li>
+                    <li><scrollLink className='scrollLink' spy={true}>Fundacja i organizacje</scrollLink></li>
+                    <li><scrollLink className='scrollLink' spy={true}>kontakt</scrollLink></li>
+                </ul>
+            </div>
+
             <HomeHeader/>
             <ThreeColumns/>
             <SimpleSteps/>
