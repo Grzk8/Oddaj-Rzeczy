@@ -1,10 +1,7 @@
 import React from 'react';
 import {
     HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
+    Link
 } from 'react-router-dom';
 import decoration from '../../assets/Decoration.svg';
 import icon_1 from '../../assets/Icon-1.svg';
@@ -16,7 +13,7 @@ import icon_4 from '../../assets/Icon-4.svg';
 function SimpleSteps() {
     return <HashRouter>
         <>
-            <section className={'simpleSteps'}>
+            <section className={'simpleSteps'} id='SimpleSteps'>
                 <h1>Wystarczą 4 proste kroki</h1>
                 <img className={'decoration'} src={decoration}></img>
 

@@ -1,8 +1,9 @@
 .menu{
   position: fixed;
-  top: 0;
+  top: 15px;
   right: 0;
   margin-right: 10%;
+  width: 50%;
 
 }
 .link {
@@ -10,5 +11,14 @@
   text-decoration: none;
   font-size: 14px;
   float: right;
-  padding-right: 10%;
+  padding-right: 15%;
+  height: 20px;
+  margin-bottom: 30px;
+}
+.scrollList{
+  .scrollLink{
+    font-size: 15px;
+    padding: 5px;
+    height: 10px;
+  }
 }

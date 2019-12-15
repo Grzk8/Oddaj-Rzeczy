@@ -1,10 +1,6 @@
 import React, {Component} from "react";
 import {
-    HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
+    HashRouter
 } from 'react-router-dom';
 
 
@@ -12,7 +8,7 @@ class ThreeColumns extends Component {
     render() {
         return <HashRouter>
 
-            <section className={'threeColumns'} id='three-columns'>
+            <section className={'threeColumns'} id='ThreeColumns'>
                 <div className={'flex-box box'}>
                     <div>
                         <h1>10</h1>

@@ -1,17 +1,16 @@
 import React, {Component} from "react";
 import {
     HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
+    Link
 } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import HomeHeader from './Home/HomeHeader';
 import ThreeColumns from './Home/ThreeColumns';
 import SimpleSteps from './Home/SimpleSteps';
 import AboutUs from './Home/AboutUs';
 import WhoWeHelp from './Home/WhoWeHelp';
 import Contact from './Home/Contact';
+
 
 function Home() {
     return <HashRouter>
@@ -26,7 +25,7 @@ function Home() {
                     <li><scrollLink className='scrollLink' to={ThreeColumns} spy={true}>O co chodzi?</scrollLink></li>
                     <li><scrollLink className='scrollLink' spy={true}>O nas</scrollLink></li>
                     <li><scrollLink className='scrollLink' spy={true}>Fundacja i organizacje</scrollLink></li>
-                    <li><scrollLink className='scrollLink' spy={true}>kontakt</scrollLink></li>
+                    <li><scrollLink className='scrollLink' spy={true}>Kontakt</scrollLink></li>
                 </ul>
             </div>
 

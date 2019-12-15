@@ -1,19 +1,14 @@
 import React from 'react';
 import {
     HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
+    Link
 } from 'react-router-dom';
-import App from "../../App";
-import Home from "../Home";
 import decoration from '../../assets/Decoration.svg';
 
 function HomeHeader() {
     return <HashRouter>
         <>
-          <header className={'headArticle flex-box'}>
+          <header className={'headArticle flex-box'} id='HomeHeader'>
                    <div className={'pcs'}>
                    </div>
 
