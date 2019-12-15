@@ -1,0 +1,20 @@
+.whoWeHelp{
+  h1{
+    padding-top: 5%;
+    margin-bottom: 1%;
+    font-size: 40px;
+    text-align: center;
+    color: $textColor;
+  }
+  .who{
+    justify-content: center;
+    p{
+      font-size: 23px;
+      width: 240px;
+      text-align: center;
+      margin-top: 76px;
+      margin-bottom: 71px;
+      color: $textColor;
+    }
+  }
+}
