@@ -21,11 +21,11 @@ function Home() {
                     <li><Link className={'link'} to="/register">Załóż konto</Link></li>
                 </ul>
                 <ul className='scrollList flex-box'>
-                    <li><scrollLink className='scrollLink start' to={HomeHeader} spy={true}>Start</scrollLink></li>
-                    <li><scrollLink className='scrollLink' to={ThreeColumns} spy={true}>O co chodzi?</scrollLink></li>
-                    <li><scrollLink className='scrollLink' spy={true}>O nas</scrollLink></li>
-                    <li><scrollLink className='scrollLink' spy={true}>Fundacja i organizacje</scrollLink></li>
-                    <li><scrollLink className='scrollLink' spy={true}>Kontakt</scrollLink></li>
+                    <li><ScrollLink className='ScrollLink start' to={'HomeHeader'} spy={true}>Start</ScrollLink></li>
+                    <li><ScrollLink className='ScrollLink' to={'ThreeColumns'} spy={true}>O co chodzi?</ScrollLink></li>
+                    <li><ScrollLink className='ScrollLink' to={'SimpleSteps'} spy={true}>O nas</ScrollLink></li>
+                    <li><ScrollLink className='ScrollLink' to={'WhoWeHelp'} spy={true}>Fundacja i organizacje</ScrollLink></li>
+                    <li><ScrollLink className='ScrollLink' to={'Contact'} spy={true}>Kontakt</ScrollLink></li>
                 </ul>
             </div>
 

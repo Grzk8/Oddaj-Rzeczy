@@ -3,29 +3,14 @@ import {
     HashRouter
 } from 'react-router-dom';
 import decoration from '../../assets/Decoration.svg';
-
+import organizations from '../../Data/whoWeHelp';
 
 class WhoWeHelp extends Component {
     constructor(props) {
-        super(props);
-        this.state = {
-            help: 'Fundacjom',
-        }
-    };
-    componentDidMount() {
+        };
 
-        handleClick = name => () => this.fetchData(name);
-        fetch('http://localhost:3000/organizations')
-            .then( resp=> resp.json())
-            .then(data => {
-                console.log(data, 'from Api');
 
-                this.setState({
-                    help: name
-                })
-            })
-    }
-
+   //   handleClick = name => () => this.state(name);
     render() {
 
 
@@ -36,9 +21,9 @@ class WhoWeHelp extends Component {
                     <img className={'decoration'} src={decoration}></img>
 
                     <div className={'who flex-box'}>
-                        <p>Fundacjom</p>
-                        <p>Organizacjom pozarządowym</p>
-                        <p>Lokalnym <br/>zbiórkom</p>
+                        <p onClick={this.handleClick('Fundacjom')}>Fundacjom</p>
+                        <p onClick={this.handleClick('Organizacjom pozarządowym')}>Organizacjom pozarządowym</p>
+                        <p onClick={this.handleClick('Zbiórkom lokamnym')}>Lokalnym <br/>zbiórkom</p>
                     </div>
                 </section>
 
