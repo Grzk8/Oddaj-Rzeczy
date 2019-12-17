@@ -7,6 +7,7 @@ import organizations from '../../Data/whoWeHelp';
 
 class WhoWeHelp extends Component {
     constructor(props) {
+        
         };
 
 
