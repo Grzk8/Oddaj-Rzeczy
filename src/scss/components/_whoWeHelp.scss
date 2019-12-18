@@ -8,7 +8,7 @@
   }
   .who{
     justify-content: center;
-    p{
+    p, {
       font-size: 23px;
       width: 240px;
       text-align: center;
@@ -16,5 +16,13 @@
       margin-bottom: 71px;
       color: $textColor;
     }
+  }
+  .description{
+    font-size: 23px;
+    margin: 0 550px 0 550px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 71px;
+    color: $textColor;
   }
 }

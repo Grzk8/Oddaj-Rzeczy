@@ -33,7 +33,7 @@
     },
     {
       "navName": "Organizacjom pozarządowym",
-      "description": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+      "description": "W naszej bazie znajdziesz listę zweryfikowanych Organizacji pozarządowych, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
       "foundations": [
         {
           "name": "Fundacja  “Dbam o Zdrowie”",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "navName": "Zbiórkom lokamnym",
+      "navName": "Zbiórkom lokalnym",
       "description": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
       "foundations": [
         {
