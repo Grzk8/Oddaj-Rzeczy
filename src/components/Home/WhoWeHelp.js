@@ -42,7 +42,7 @@ class WhoWeHelp extends Component {
             const pageNumbers = [];
             for (let i = 1; i <= Math.ceil(list.length / orgPerPage); i++) {
                 const page = <li onClick={e => this.handleClickPage(e)}
-                                 className={this.state.currentPage === i ? "active" : ""}>{i}</li>
+                                 {this.state.currentPage === i ? "active" : ""}>{i}</li>
                 pageNumbers.push(page)
             }
 
