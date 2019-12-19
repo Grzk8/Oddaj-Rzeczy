@@ -10,8 +10,9 @@ class WhoWeHelp extends Component {
 
         state= {
             org: 1,
+            list: [],
             currentPage: 1,
-            listPerPage: 3,
+            orgPerPage: 3,
         }
 
 
@@ -20,10 +21,37 @@ class WhoWeHelp extends Component {
                 org: currentorg
             })
 }
-    render() {
-        console.log(organizations.organizations[1].description);
 
-        const orgn = organizations.organizations;
+
+    handleClickPage= (e)=> {
+        this.setState({
+            currentPage: i
+        })
+
+
+        render() {
+
+
+            const {list, currentPage, orgPerPage} = this.state;
+
+            const lastOrg = currentPage * orgPerPage;
+            const firstOrg = lastOrg - orgPerPage;
+            const currentList = list.slice(firstOrg, lastOrg);
+
+
+            const pageNumbers = [];
+            for (let i = 1; i <= Math.ceil(list.length / orgPerPage); i++) {
+                const page = <li onClick={e => this.handleClickPage(e)}
+                                 className={this.state.currentPage === i ? "active" : ""}>{i}</li>
+                pageNumbers.push(page)
+            }
+
+
+            const orgn = organizations.organizations;
+            console.log(orgn[1].description);
+
+        }
+
         return <HashRouter>
             <>
                 <section className={'whoWeHelp'} id='WhoWeHelp'>
@@ -40,13 +68,19 @@ class WhoWeHelp extends Component {
                         list.map(element=>(
                         <tr>
                             <td>{orgn.name}
-                            <p>{orgn.mission}</p>
+                                <p>{orgn.mission}</p>
                             </td>
                             <td>{orgn.things}</td>
                         </tr>
                         )
                     </div>
                     <div>{orgn.things}</div>
+
+                    <div className="pages">
+                        <ul>
+                            {pageNumbers}
+                        </ul>
+                    </div>
                 </section>
 
             </>
