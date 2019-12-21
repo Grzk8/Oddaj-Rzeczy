@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import {
-    HashRouter
-} from 'react-router-dom';
 import decoration from '../../assets/Decoration.svg';
 
 import organizations from '../../Data/whoWeHelp';
@@ -15,9 +12,15 @@ class WhoWeHelp extends Component {
             orgPerPage: 3,
         }
 
+
+    handleClick=(number)=>{
+        this.setState({
+            org:number,
+        })
+    }
         render() {
             return(
-              <section className={'whoWeHelp'}>
+              <section className={'whoWeHelp'} id='WhoWeHelp'>
                   <h1>Komu pomagamy?</h1>
                   <img className={'decoration'} src={decoration}></img>
 
@@ -28,8 +31,15 @@ class WhoWeHelp extends Component {
                   </div>
                   <p className={'description'}>{this.state.list[this.state.org].description}</p>
                     <div>
-
-
+                        {this.state.list[this.state.org].foundations.slice(0,3).map(orgn =>{
+                            return (<tr>
+                                <td>{orgn.name}
+                                <p>{orgn.mission}</p>
+                                </td>
+                                <td className={'things'}>{orgn.things}</td>
+                            </tr>
+                            )
+                        })}
                     </div>
               </section>
             );

@@ -15,6 +15,12 @@
       margin-top: 76px;
       margin-bottom: 71px;
       color: $textColor;
+      cursor: pointer;
+      &:hover{
+        border: 1px solid $textColor;
+        padding: 10px;
+
+      }
     }
   }
   .description{
@@ -24,5 +30,19 @@
     margin-top: 76px;
     margin-bottom: 71px;
     color: $textColor;
+  }
+  td{
+    font-size: 25px;
+    color: $textColor;
+    padding-bottom: 60px;
+    padding-left: 300px;
+    p{
+      font-size: 15px;
+      font-style: italic;
+    }
+  }
+  .things{
+    font-size: 20px;
+    font-style: italic;
   }
 }
