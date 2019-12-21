@@ -10,6 +10,7 @@ import SimpleSteps from './Home/SimpleSteps';
 import AboutUs from './Home/AboutUs';
 import WhoWeHelp from './Home/WhoWeHelp';
 import Contact from './Home/Contact';
+import Footer from './Home/Footer';
 
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
             <AboutUs/>
             <WhoWeHelp/>
             <Contact/>
+            <Footer/>
 
         </>
     </HashRouter>;

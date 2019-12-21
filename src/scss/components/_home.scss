@@ -1,10 +1,20 @@
 .menu{
-  position: fixed;
   top: 15px;
   right: 0;
   margin-right: 10%;
   width: 50%;
-
+  .logUl{
+    height: 20px;
+  }
+  .scrollList{
+    .li{
+      .ScrollLink {
+        font-size: 15px;
+        padding-right: 15px;
+        height: 10px;
+      }
+    }
+  }
 }
 .link {
   color: black;
@@ -14,11 +24,4 @@
   padding-right: 15%;
   height: 20px;
   margin-bottom: 30px;
-}
-.scrollList{
-  .scrollLink{
-    font-size: 15px;
-    padding: 5px;
-    height: 10px;
-  }
 }
