@@ -17,22 +17,23 @@
       line-height: 55px;
     }
     .decoration{
-      top: 350px;
+      top: 460px;
       left: 60%;
     }
     .header_buttons{
       position: absolute;
       left: 50%;
-      top: 50%;
+      top: 60%;
      .btn{
-       border: 1px solid $textColor;
-       width: 250px;
+       border: 1.2px solid $textColor;
+       width: 260px;
      padding: 5% 0 5% 0;
        margin-right: 60px;
        .link{
-         font-size: 30px;
+         font-size: 27px;
          color: $textColor;
          text-align: center;
+         text-decoration: none;
          text-transform: uppercase;
        }
      }

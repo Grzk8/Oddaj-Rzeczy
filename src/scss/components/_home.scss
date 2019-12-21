@@ -1,27 +1,37 @@
 .menu{
-  top: 15px;
-  right: 0;
-  margin-right: 10%;
-  width: 50%;
-  .logUl{
-    height: 20px;
-  }
-  .scrollList{
-    .li{
-      .ScrollLink {
-        font-size: 15px;
-        padding-right: 15px;
-        height: 10px;
+  margin-top: 20px;
+  margin-right: 120px;
+.links{
+  justify-content: flex-end;
+  li {
+    .link {
+      color: $textColor;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 85px;
+      margin-left: 20px;
+      padding: 5px;
+      &:hover{
+        border: 1px solid gold;
       }
     }
   }
 }
-.link {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-  float: right;
-  padding-right: 15%;
-  height: 20px;
-  margin-bottom: 30px;
+.menuScroll{
+.scrollList{
+  justify-content: flex-end;
+  li {
+    .ScrollLink {
+      color: $textColor;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 20px;
+      padding: 5px;
+      &:hover{
+        border: 1px solid  $textColor;
+      }
+    }
+  }
+}
+}
 }
