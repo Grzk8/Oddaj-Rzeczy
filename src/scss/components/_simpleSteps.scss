@@ -7,6 +7,9 @@
     text-align: center;
     color: $textColor;
   }
+  .decoration{
+    left: 42%;
+  }
 }
 .steps{
   background-color: $BackgroundSimpleSteps;
@@ -23,6 +26,25 @@
   margin-top: 76px;
   margin-bottom: 71px;
   color: $textColor;
+  position: relative;
+  .line{
+    margin-top: -18px;
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    left: 23%;
+  }
+  .twwo{
+    margin-top: 1px;
+  }
+  .things{
+  margin-top: 24px;
+  }
+  .two{
+    margin-top: 40px;
+  }
 }
 }
 }
@@ -36,7 +58,5 @@
   text-decoration: none;
   text-align: center;
   border: 1px solid $textColor;
-  margin-top: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 30px;
 }}

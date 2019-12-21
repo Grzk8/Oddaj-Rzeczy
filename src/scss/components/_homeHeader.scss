@@ -27,13 +27,14 @@
      .btn{
        border: 1.2px solid $textColor;
        width: 260px;
-     padding: 5% 0 5% 0;
+       padding: 5% 0 5% 0;
        margin-right: 60px;
+       text-align: center;
        .link{
          font-size: 27px;
          color: $textColor;
          text-align: center;
-         text-decoration: none;
+
          text-transform: uppercase;
        }
      }

@@ -22,30 +22,34 @@ function SimpleSteps() {
                         <div className={'step'}>
                             <img src={icon_1}></img>
                             <p>Wybierz rzeczy</p>
-                            <p>ubrania, zabawki, sprzęt i inne</p>
+                            <div className={'line'}></div>
+                            <p className={'things'}>ubrania, zabawki, sprzęt i inne</p>
                         </div>
 
                         <div className={'step'}>
                             <img src={icon_2}></img>
+                            <div className={'line'}></div>
                             <p>Spakuj je</p>
-                            <p>skożystaj z worków na śmieci</p>
+                            <p className={'things'}>skożystaj z worków na śmieci</p>
                         </div>
 
                         <div className={'step'}>
                             <img src={icon_3}></img>
                             <p>Zdecyduj komu chcesz pomóc</p>
-                            <p>wybierz zaufane miejsce</p>
+                            <div className={'line twwo'}></div>
+                            <p className={'things two'}>wybierz zaufane miejsce</p>
                         </div>
 
                         <div className={'step'}>
                             <img src={icon_4}></img>
                             <p>Zamów kuriera</p>
-                            <p>kurier przyjedzie w dogodnym terminie</p>
+                            <div className={'line'}></div>
+                            <p className={'things'}>kurier przyjedzie w dogodnym terminie</p>
                     </div>
                 </div>
                 </div>
                 <div className={'button'}>
-                    <Link className='link' to="/">ODDAJ RZECZY</Link>
+                    <Link className='link' to="/login">ODDAJ RZECZY</Link>
                 </div>
 
             </section>
