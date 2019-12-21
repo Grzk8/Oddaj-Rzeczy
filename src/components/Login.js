@@ -55,7 +55,7 @@ class Login extends Component{
                     <input onChange={this.handleChange} name='pass' className='form__log--style'  type='password'/>
                 </form>
                 <div className="form_log_acount">
-                    <Link className='link' to="/">Załuż konto</Link>
+                    <Link className='link' to="/">Załóż konto</Link>
                     <button onClick={this.handleSubmit} className="form__submit" type='submit'>Zaloguj się</button>
                 </div>
             </div>

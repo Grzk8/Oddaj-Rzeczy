@@ -15,7 +15,8 @@ class Contact extends Component{
       mail: "",
       errormsg: "",
       message: "",
-      orderCompleted: false,
+        msg:"",
+
     };
 
     handleChange = (e) => {
@@ -27,7 +28,12 @@ class Contact extends Component{
     handleSubmitForm = (e) => {
         e.preventDefault();
         this.setState({
-            errorMsg: ""
+
+            name: "",
+            mail: "",
+            errormsg: "",
+            message: "",
+
         });
 
         if (this.state.mail.indexOf("@") === -1) {
@@ -45,7 +51,7 @@ class Contact extends Component{
                 .then(resp => resp.json())
                 .then(data => {
                     this.setState({
-                        orderCompleted: true,
+                        success: 'Twoja wiadomość została wysłana'
                     })
 
                 })
@@ -55,6 +61,7 @@ class Contact extends Component{
 
 
     render() {
+
         return(
             <>
                 <section className={'contact flex-box'} id='Contact'>
@@ -86,6 +93,7 @@ class Contact extends Component{
                                     <textarea name="description" value={this.state.description} onChange={this.handleChange} placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptate. " onChange={this.handleChange}/>
                                 </div>
                                 <input className="btn" type="submit" value="WYŚLIJ"/>
+                             <div className="success">{this.state.success}</div>
                          </form>
                     </div>
 

@@ -9,15 +9,23 @@ class WhoWeHelp extends Component {
             org: 1,
             list: organizations.organizations,
             currentPage: 1,
-            orgPerPage: 3,
-        }
+        };
 
 
     handleClick=(number)=>{
         this.setState({
             org:number,
         })
-    }
+    };
+
+    pageClick = () => {
+        this.setState({
+                currentPage: (3,6)
+        }
+
+        )
+}
+
         render() {
             return(
               <section className={'whoWeHelp'} id='WhoWeHelp'>
@@ -41,6 +49,11 @@ class WhoWeHelp extends Component {
                             )
                         })}
                     </div>
+                  <div className={'btns'}>
+                      <div onClick={() => this.pageClick} className={'next'}>1</div>
+                      <div className={'prex'}>2</div>
+                  </div>
+
               </section>
             );
         }
