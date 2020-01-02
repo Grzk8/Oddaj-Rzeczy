@@ -12,7 +12,7 @@ import {render} from "react-dom";
 class Contact extends Component{
     state = {
       name: "",
-      mail: "",
+      email: "",
       errormsg: "",
       message: "",
         msg:"",
@@ -30,7 +30,7 @@ class Contact extends Component{
         this.setState({
 
             name: "",
-            mail: "",
+            email: "",
             errormsg: "",
             message: "",
 
@@ -44,7 +44,7 @@ class Contact extends Component{
             return false;
         }else{
             fetch(`https://fer-api.coderslab.pl/v1/portfolio/contact`,{method: 'POST',
-                body:JSON.stringify({name: this.state.name, mail: this.state.mail, message: this.state.message}),headers: {
+                body:JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message}),headers: {
                     'Content-Type': 'application/json'
                 },
             })
@@ -54,7 +54,7 @@ class Contact extends Component{
                         success: 'Twoja wiadomość została wysłana'
                     })
 
-                })
+                }).catch(e)
         }
 
     }
@@ -90,7 +90,7 @@ class Contact extends Component{
                                 </div>
                                 <div className={'message flex-box'}>
                                     <label>Wpisz swoją wiadomość</label>
-                                    <textarea name="description" value={this.state.description} onChange={this.handleChange} placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptate. " onChange={this.handleChange}/>
+                                    <textarea name="message" value={this.state.description} onChange={this.handleChange} placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptate. " onChange={this.handleChange}/>
                                 </div>
                                 <input className="btn" type="submit" value="WYŚLIJ"/>
                              <div className="success">{this.state.success}</div>

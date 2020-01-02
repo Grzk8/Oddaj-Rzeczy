@@ -20,7 +20,7 @@ class Login extends Component{
     };
 
     handleSubmit = () => {
-        console.log('dupa');
+        console.log('login');
     };
 
     render() {
