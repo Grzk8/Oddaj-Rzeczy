@@ -1,0 +1,22 @@
+footer {
+  font-weight: bold;
+  width: 100vw;
+  color: $textColor;
+  padding-bottom: 15px;
+  position: relative;
+  .instagram, .facebook {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 30%;
+  }
+  .instagram {
+    background-image: url(./../../assets/Instagram.svg);
+    right: 5%;
+  }
+  .facebook {
+    background-image: url(./../../assets/Facebook.svg);
+    right: 8%;
+  }
+}

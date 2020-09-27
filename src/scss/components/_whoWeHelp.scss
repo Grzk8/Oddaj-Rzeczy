@@ -1,0 +1,49 @@
+.whoWeHelp{
+  h1{
+    padding-top: 5%;
+    margin-bottom: 1%;
+    font-size: 40px;
+    text-align: center;
+    color: $textColor;
+  }
+  .who{
+    justify-content: center;
+    p, {
+      font-size: 23px;
+      width: 240px;
+      text-align: center;
+      margin-top: 76px;
+      margin-bottom: 71px;
+      padding: 30px;
+      color: $textColor;
+      cursor: pointer;
+      &:hover{
+        border: 1px solid $textColor;
+
+
+      }
+    }
+  }
+  .description{
+    font-size: 23px;
+    margin: 0 550px 0 550px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 71px;
+    color: $textColor;
+  }
+  td{
+    font-size: 25px;
+    color: $textColor;
+    padding-bottom: 60px;
+    padding-left: 300px;
+    p{
+      font-size: 15px;
+      font-style: italic;
+    }
+  }
+  .things{
+    font-size: 20px;
+    font-style: italic;
+  }
+}
